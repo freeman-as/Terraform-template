@@ -1,0 +1,2 @@
+project     = "testlog"
+environment = "dev"
