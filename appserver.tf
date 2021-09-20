@@ -124,7 +124,7 @@ resource "aws_autoscaling_group" "app_asg" {
     aws_subnet.public_subnet_1c.id
   ]
 
-  target_group_arns = [aws_alb_target_group.alb_target_group.arn]
+  target_group_arns = [aws_lb_target_group.alb_target_group.arn]
 
   mixed_instances_policy {
     launch_template {
