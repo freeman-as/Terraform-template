@@ -8,8 +8,13 @@ data "aws_ami" "app" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm-2.0.*-x86_64-gp2"]
+    values = ["testlog-app-ami"]
+
   }
+  # filter {
+  #   name   = "name"
+  #   values = ["amzn2-ami-hvm-2.0.*-x86_64-gp2"]
+  # }
 
   filter {
     name   = "root-device-type"

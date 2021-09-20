@@ -47,10 +47,10 @@ resource "aws_cloudfront_distribution" "cf" {
   }
 
   ordered_cache_behavior {
-    path_pattern       = "/public/*"
-    allowed_methods    = ["GET", "HEAD"]
-    cached_methods = ["GET", "HEAD"]
-    target_origin_id   = aws_s3_bucket.s3_static_bucket.id
+    path_pattern     = "/public/*"
+    allowed_methods  = ["GET", "HEAD"]
+    cached_methods   = ["GET", "HEAD"]
+    target_origin_id = aws_s3_bucket.s3_static_bucket.id
 
     forwarded_values {
       query_string = false
